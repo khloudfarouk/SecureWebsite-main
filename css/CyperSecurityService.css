@@ -1,0 +1,888 @@
+
+html, body {
+  overflow-x: hidden; /* يمنع السكرول الأفقي */
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* فوق الخلفية */
+  opacity: 2; /* شفافية تخلي التدرج يظهر */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(5, 12, 20, 0.95) 0%, rgba(1, 36, 88, 0.938) 50%);
+  z-index: 0; /* تحت الصورة */
+}
+
+
+
+
+/* Animated gradient background */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  text-align: start;
+  color: white;
+  padding-top: 150px;
+  /* علشان الناف بار */
+}
+
+/* العبارة الأولى */
+.hero-title {
+    z-index: 2;
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.3;
+  /* Medium */
+  font-size: 72px;
+  
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* العبارة الثانية */
+.hero-subtitle {
+    z-index: 2;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  /* Regular */
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Hero Button */
+.hero-btn {
+    z-index: 2;
+  background-color: white;
+  color: black;
+  /* width: 200px;
+  height: 50px; */
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown arrow style */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  transition: transform 0.25s ease;
+}
+
+.nav-item.dropdown.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+
+
+/* nav section */
+/* Transparent Navbar */
+.custom-navbar {
+    z-index: 2;
+  background: transparent;
+
+}
+
+/* Brand style (Secure) */
+.brand-secure {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: 0.35px;
+  color: white !important;
+  vertical-align: middle;
+}
+
+/* Nav links style (Home, About Us, Our Services) */
+.nav-link {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: white !important;
+}
+
+/* Remove Bootstrap default arrow */
+.dropdown-toggle::after {
+  display: none !important;
+}
+.custom-navbar
+{
+      transition: top 0.3s ease-in-out;
+
+}
+
+/* Font Awesome arrow styling */
+.dropdown-arrow {
+  margin-left: 8px;
+  transition: transform .25s ease;
+  font-size: 14px;
+  color: white;
+}
+
+/* Rotate arrow when open */
+.nav-item.dropdown.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: white;
+  border: none;
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+
+
+/* Dropdown arrow style */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  transition: transform 0.25s ease;
+}
+
+.nav-item.dropdown.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* عرض أكبر للدروب داون */
+.mega-dropdown {
+ min-width: 600px !important; /* عرض أكبر */
+  background-color: #f8f9fa;   /* الخلفية */
+  border-radius: 8px;          /* حواف دائرية */
+  border: 1px solid #ddd;      /* حدود خفيفة */
+}
+
+.mega-dropdown .row {
+  margin: 0; /* إزالة المسافات الجانبية الافتراضية */
+}
+
+/* تعديل البادينج الداخلي */
+.dropdown-title {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-title:hover {
+  text-decoration: underline;
+}
+
+/* تنسيق العناصر */
+.dropdown-menu .dropdown-item {
+  padding: 0.25rem 0;
+  white-space: normal; /* السماح بلف النص */
+}
+.mega-dropdown ul li a.dropdown-item {
+  font-size: 0.775rem; /* 14px تقريبًا */
+  line-height: 1.4;    /* ارتفاع السطر */
+  padding-left: 0;     /* نخليها قريبة من النقطة */
+}
+
+ul {
+  list-style-type: disc; /* نقاط */
+  /* list-style-position: inside; جوه العنصر */
+}
+
+/* Contact Us Button */
+.contact-btn {
+  background-color: white;
+  color: black;
+  width: 140px;
+  height: 38px;
+  border-radius: 4px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #ddd;
+}
+
+
+/* موبايل: نصغر الخطوط */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: -70px; /* يرفع النص لفوق */
+  }
+  .hero-section
+  {
+    
+    height: 80vh;
+  }
+  .hero-title {
+    
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* شاشات صغيرة جدًا (موبايل أصغر من 480px) */
+@media (max-width: 375px) {
+  .hero-content {
+    margin-top: -100px; /* يرفع النص لفوق */
+  }
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    overflow: visible; /* علشان الدروب داون يبقى باين */
+  }
+  .mega-dropdown {
+    min-width: 100% !important;  /* العرض يبقى ياخد الشاشة */
+    border-radius: 0;            /* نشيل الزوايا */
+    border: none;                
+    padding: 10px 15px;          /* مسافة داخلية */
+  }
+
+  .mega-dropdown .row {
+    display: block;              /* بدل flex/grid */
+  }
+
+  .mega-dropdown .col-12,
+  .mega-dropdown .col-md-4 {
+    width: 100% !important;      /* كل عمود ياخد عرض الشاشة */
+    margin-bottom: 15px;         /* مسافة بين الأقسام */
+  }
+
+  .mega-dropdown .dropdown-title {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .mega-dropdown ul li a.dropdown-item {
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
+}
+/* end nav section */
+
+
+/* Cybersecurity Isn’t Optional. It’s Urgent. */
+.section-title {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #0B1A2B;
+}
+
+.section-desc {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  color: #0B1A2B;
+  font-size: 1.8rem;
+  line-height: 2.1;
+  font-weight: 250;
+}
+
+
+
+
+
+.timeline-horizontal {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 45px 0;
+    width: 99%;
+    margin: 0 auto; /* توسيط الكونتينر */
+    
+}
+
+/* الخط الأفقي */
+.timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* في منتصف الكونتينر */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(32, 32, 32);
+    z-index: 0;
+}
+
+.timeline-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* النقطة داخل الخط */
+.timeline-point {
+    position: absolute;
+    top: 50%; /* نفس مستوى الخط */
+    transform: translateY(-50%);
+     width: 12px; /* أكبر من قبل */
+    height: 12px; /* أكبر من قبل */
+    background: rgb(41, 41, 41); /* اللون الداخلي */
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(41, 41, 41); /* تصغير الفارغ */
+    z-index: 2;
+}
+
+/* السهم */
+.timeline-arrow {
+    width: 1px;
+    background: rgb(221, 221, 221);
+    position: relative;
+    margin: 5px 0;
+    z-index: 1;
+}
+
+.timeline-arrow.down {
+    height: 50px;
+    margin-top: 65px;
+}
+
+.timeline-arrow.up {
+    height: 50px;
+    
+}
+
+.timeline-arrow.down::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;  /* حجم الدائرة */
+    height: 5px;
+    background-color: rgb(185, 183, 183); /* لون الدائرة */
+    border-radius: 50%; /* يخليها مدورة */
+}
+
+.timeline-arrow.up::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;  /* حجم الدائرة */
+    height: 5px;
+    background-color: rgb(185, 183, 183); /* لون الدائرة */
+    border-radius: 50%; /* يخليها مدورة */
+}
+
+/* ترتيب العناصر فوق وتحت */
+.timeline-item.top h4 {
+    margin-bottom: 10px;
+}
+
+.timeline-item.bottom h4 {
+    margin-top: 10px;
+}
+
+
+
+.timeline-item p
+{
+    text-align: center
+}
+
+
+
+.timeline-vertical {
+    position: relative;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.timeline-vertical::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    background: rgb(32, 32, 32);
+}
+
+.timeline-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-block .point {
+    width: 14px;
+    height: 14px;
+    background: rgb(41, 41, 41);
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(41, 41, 41);
+}
+
+.timeline-block .content {
+    margin-left: 20px;
+}
+
+.timeline-block h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-block p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* شاشات متوسطة (تابلت) */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 1.8rem;
+    
+  }
+  .section-desc {
+    font-size: 1rem;
+  }
+}
+
+/* شاشات صغيرة (موبايل) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.2rem;
+    
+  }
+  .section-desc {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* الافتراضي: نخلي الأفقي ظاهر */
+.timeline-horizontal {
+  display: flex;
+}
+.timeline-vertical {
+  display: none;
+}
+
+/* في الشاشات الصغيرة (تابلت + موبايل) نخفي الأفقي ونظهر الرأسي */
+@media (max-width: 768px) {
+  .timeline-horizontal {
+    display: none;
+  }
+  .timeline-vertical {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/* child pornography */
+.section-title2{
+font-size: 2.7rem;
+  font-weight: 500;
+  color: #0B1A2B;
+}
+
+.section-desc2 {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  color: #0B1A2B;
+  font-size: 1.5rem;
+  line-height: 2.1;
+  font-weight: 500;
+}
+
+
+
+/* CSS fade in للنص */
+/* إعدادات عامة للنصوص */
+.carousel-content {
+  position: relative;
+  min-height: 500px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* العناصر داخل النصوص */
+.content-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.content-item.active {
+  opacity: 1;
+}
+
+/* الصور في الكاروسيل */
+.caro-img {
+  margin-top: 0;
+  border-radius: 8px;
+  width: 100%; /* العرض كامل للعمود */
+  max-width: 100%; /* الحد الأقصى للعرض */
+  height: 500px; /* الارتفاع يتناسب تلقائياً */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* النصوص */
+.carousel-content h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel-content h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.carousel-content p {
+  font-size: 1.3rem;
+  line-height: 3.1rem;
+}
+
+/* محاذاة الصف */
+.row.align-items-center {
+  align-items: flex-start !important;
+}
+
+/* --- Responsive --- */
+
+/* تابلت */
+@media (max-width: 992px) {
+  .section-title2 {
+    font-size: 2rem;
+  }
+  .section-desc2 {
+    font-size: 1rem;
+  }
+  .carousel-content h5 {
+    font-size: 1.3rem;
+  }
+  .carousel-content h6 {
+    font-size: 1.1rem;
+  }
+  .carousel-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* موبايل */
+@media (max-width: 576px) {
+  .section-title2 {
+    font-size: 1.6rem;
+  }
+  .section-desc2 {
+    font-size: 0.9rem;
+  }
+  .carousel-content h5 {
+    font-size: 1.1rem;
+  }
+  .carousel-content h6 {
+    font-size: 1rem;
+  }
+  .carousel-content p {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+.container-box {
+  background: linear-gradient(
+    270deg,
+    rgba(10, 79, 158, 0.932),
+    rgba(255, 255, 255, 0.9)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 40px;
+ 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* النص */
+.text-section {
+  flex: 2;
+}
+.text-section h4 {
+  padding-left: 80px;
+}
+.text-section ul {
+  list-style-type: disc;
+  padding-left: 105px;
+}
+
+/* الصورة */
+.image-section {
+  flex: 1;
+}
+.image-section img {
+  width: 200px;
+  height: auto;
+}
+
+/* --------- responsive -------- */
+@media (max-width: 992px) {
+  .container-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .text-section h4,
+  .text-section ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  .image-section img {
+    width: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* toasts */
+.toast-bar {
+background: linear-gradient(
+    270deg, 
+    rgba(10, 79, 158, 0.932),   /* أزرق شفاف في اليمين */
+    rgba(255, 255, 255, 0.9)  /* أبيض شفاف في الشمال */
+  );
+   border-radius: 12px;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 65%;
+  max-width: 900px;
+  min-height: 80px;
+}
+
+.toast-bar span {
+  font-weight: 500;
+  color: #000; /* النص أسود */
+}
+
+
+/* ميديا كويري للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .toast-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    top: -90px;
+    padding: 15px 20px;
+  }
+
+  .toast-bar a {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* ميديا كويري للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  .toast-bar {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+}
+
+/* end of toasts */
+
+
+.footer
+{
+  background-color: #182330;
+}
+  .social-icon .img {
+    
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* font-size: 18px; */
+    /* text-decoration: none; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  /* ===== Footer: mobile/tablet tweaks ===== */
+@media (max-width: 768px) {
+  /* 1) كلمة Secure في النص */
+  .footer .col-md-3:first-of-type h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* 2) الثلاث أعمدة (Home / About / Services) جنب بعض في نفس الصف */
+  .footer .row { align-items: flex-start; }
+  .footer .col-md-2{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    text-align: center;
+  }
+  .footer .col-md-2 h6{
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .footer .col-md-2 ul{ margin:0; padding-left:0; list-style:none; }
+  .footer .col-md-2 ul li,
+  .footer .col-md-2 ul li a{
+    font-size: 0.8rem;
+    display: inline-block;
+  }
+
+  /* 3) صف الأيقونات في النص */
+  .footer .row > .col-md-3:last-of-type h6{ text-align:center; }
+  .footer .row > .col-md-3:last-of-type .d-flex{
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .footer .social-icon{ width:30px !important; height:30px !important; }
+  .footer .social-icon img{ width:16px; height:16px; }
+
+  /* 4) الصف الأخير (Privacy/Terms/...) يظهر كله في نفس الصف */
+  .footer hr + .d-flex.justify-content-center.container{
+    padding-left: 8px; padding-right: 8px;   /* نكسب مساحة أفقية */
+    gap: 8px !important;                     /* نقلل المسافات */
+    flex-wrap: nowrap !important;            /* صف واحد */
+  }
+  .footer hr + .d-flex.justify-content-center.container p{
+    white-space: nowrap;                     /* ما يكسرش سطور */
+    font-size: clamp(10px, 2.6vw, 12px);     /* يصغر بما يكفي للموبايل */
+    margin-bottom: 0;
+    letter-spacing: -0.1px;                  /* تحجيم بسيط */
+  }
+}

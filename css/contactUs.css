@@ -1,0 +1,330 @@
+html, body {
+  overflow-x: hidden; /* يمنع السكرول الأفقي */
+}
+
+.nav-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: black !important;
+}
+
+/* اخفاء سهم البوتستراب */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-arrow {
+    margin-left: 8px;
+    transition: transform 0.25s ease;
+    font-size: 14px;
+    color: black;
+}
+.nav-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 700!important;
+    font-size: 24px;
+    color: black !important;
+}
+
+/* اخفاء سهم البوتستراب */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+
+.dropdown-arrow {
+    margin-left: 8px;
+    transition: transform 0.25s ease;
+    font-size: 14px;
+    color: black;
+}
+
+
+/* Dropdown arrow style */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  transition: transform 0.25s ease;
+}
+
+.nav-item.dropdown.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* عرض أكبر للدروب داون */
+.mega-dropdown {
+ min-width: 600px !important; /* عرض أكبر */
+  background-color: #f8f9fa;   /* الخلفية */
+  border-radius: 8px;          /* حواف دائرية */
+  border: 1px solid #ddd;      /* حدود خفيفة */
+}
+
+.mega-dropdown .row {
+  margin: 0; /* إزالة المسافات الجانبية الافتراضية */
+}
+
+/* تعديل البادينج الداخلي */
+.dropdown-title {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-title:hover {
+  text-decoration: underline;
+}
+
+/* تنسيق العناصر */
+.dropdown-menu .dropdown-item {
+  padding: 0.25rem 0;
+  white-space: normal; /* السماح بلف النص */
+}
+.mega-dropdown ul li a.dropdown-item {
+  font-size: 0.775rem; /* 14px تقريبًا */
+  line-height: 1.4;    /* ارتفاع السطر */
+  padding-left: 0;     /* نخليها قريبة من النقطة */
+}
+
+ul {
+  list-style-type: disc; /* نقاط */
+  /* list-style-position: inside; جوه العنصر */
+}
+
+
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    overflow: visible; /* علشان الدروب داون يبقى باين */
+  }
+  .mega-dropdown {
+    min-width: 100% !important;  /* العرض يبقى ياخد الشاشة */
+    border-radius: 0;            /* نشيل الزوايا */
+    border: none;                
+    padding: 10px 15px;          /* مسافة داخلية */
+  }
+
+  .mega-dropdown .row {
+    display: block;              /* بدل flex/grid */
+  }
+
+  .mega-dropdown .col-12,
+  .mega-dropdown .col-md-4 {
+    width: 100% !important;      /* كل عمود ياخد عرض الشاشة */
+    margin-bottom: 15px;         /* مسافة بين الأقسام */
+  }
+
+  .mega-dropdown .dropdown-title {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .mega-dropdown ul li a.dropdown-item {
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
+}
+
+.contact-btn {
+  background-color: white;
+  color: black;
+  width: 140px;
+  height: 38px;
+  border-radius: 4px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* contact us form */
+.contact-wrap {
+  background: #0b1a2b; /* لون الخلفية الأساسي */
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+/* تأثير زجاجي */
+.glass-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* الحقول بخلفية شفافة */
+.form-transparent {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff !important;
+}
+
+.form-transparent::placeholder {
+  color: rgba(255, 255, 255)!important;
+}
+
+.form-transparent:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+
+/* تصغير النص والصورة على الشاشات الصغيرة */
+@media (max-width: 576px) {
+  .contact-wrap h3 {
+    font-size: 1.25rem;
+  }
+  .contact-wrap p {
+    font-size: 0.9rem;
+  }
+  .form-section
+  {
+    padding: 20px;
+  }
+}
+
+
+/* end contact us  */
+
+
+
+
+
+
+/* toasts */
+.toast-bar {
+background: linear-gradient(
+    270deg, 
+    rgba(10, 79, 158, 0.932),   /* أزرق شفاف في اليمين */
+    rgba(255, 255, 255, 0.9)  /* أبيض شفاف في الشمال */
+  );
+   border-radius: 12px;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 65%;
+  max-width: 900px;
+  min-height: 80px;
+}
+
+.toast-bar span {
+  font-weight: 500;
+  color: #000; /* النص أسود */
+}
+
+
+/* ميديا كويري للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .toast-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    top: -90px;
+    padding: 15px 20px;
+  }
+
+  .toast-bar a {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* ميديا كويري للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  .toast-bar {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+}
+
+/* end of toasts */
+
+
+.footer
+{
+  background-color: #182330;
+}
+  .social-icon .img {
+    
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* font-size: 18px; */
+    /* text-decoration: none; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  /* ===== Footer: mobile/tablet tweaks ===== */
+@media (max-width: 768px) {
+  /* 1) كلمة Secure في النص */
+  .footer .col-md-3:first-of-type h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* 2) الثلاث أعمدة (Home / About / Services) جنب بعض في نفس الصف */
+  .footer .row { align-items: flex-start; }
+  .footer .col-md-2{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    text-align: center;
+  }
+  .footer .col-md-2 h6{
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .footer .col-md-2 ul{ margin:0; padding-left:0; list-style:none; }
+  .footer .col-md-2 ul li,
+  .footer .col-md-2 ul li a{
+    font-size: 0.8rem;
+    display: inline-block;
+  }
+
+  /* 3) صف الأيقونات في النص */
+  .footer .row > .col-md-3:last-of-type h6{ text-align:center; }
+  .footer .row > .col-md-3:last-of-type .d-flex{
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .footer .social-icon{ width:30px !important; height:30px !important; }
+  .footer .social-icon img{ width:16px; height:16px; }
+
+  /* 4) الصف الأخير (Privacy/Terms/...) يظهر كله في نفس الصف */
+  .footer hr + .d-flex.justify-content-center.container{
+    padding-left: 8px; padding-right: 8px;   /* نكسب مساحة أفقية */
+    gap: 8px !important;                     /* نقلل المسافات */
+    flex-wrap: nowrap !important;            /* صف واحد */
+  }
+  .footer hr + .d-flex.justify-content-center.container p{
+    white-space: nowrap;                     /* ما يكسرش سطور */
+    font-size: clamp(10px, 2.6vw, 12px);     /* يصغر بما يكفي للموبايل */
+    margin-bottom: 0;
+    letter-spacing: -0.1px;                  /* تحجيم بسيط */
+  }
+}
