@@ -1,8 +1,8 @@
 html, body {
-  overflow-x: hidden; /* يمنع السكرول الأفقي */
+  overflow-x: hidden; 
 }
 
-/* Hero Section */
+
 .hero-section {
     position: relative;
     height: 110vh;
@@ -17,9 +17,9 @@ html, body {
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    /* فوق الخلفية */
+    
     opacity: 2;
-    /* شفافية تخلي التدرج يظهر */
+    
 }
 
 .hero-overlay {
@@ -30,13 +30,13 @@ html, body {
     height: 100%;
     background: linear-gradient(to left, rgba(11, 26, 43, 0.95) 0%, rgba(1, 36, 88, 0.938) 50%);
     z-index: 0;
-    /* تحت الصورة */
+    
 }
 
 
 
 
-/* Animated gradient background */
+
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -51,7 +51,7 @@ html, body {
     }
 }
 
-/* Hero Content */
+
 .hero-content {
     z-index: 2;
     flex: 1;
@@ -63,10 +63,10 @@ html, body {
     text-align: start;
     color: white;
     padding-top: 150px;
-    /* علشان الناف بار */
+    
 }
 
-/* العبارة الأولى */
+
 .hero-title {
     z-index: 2;
     font-family: Poppins, sans-serif;
@@ -79,13 +79,13 @@ html, body {
     margin-bottom: 20px;
 }
 
-/* العبارة الثانية */
+
 .hero-subtitle {
     z-index: 2;
     font-family: Poppins, sans-serif;
 
     font-style: normal;
-    /* Regular */
+    
     font-size: 25px;
     line-height: 42px;
     letter-spacing: 0px;
@@ -93,17 +93,16 @@ html, body {
     margin-bottom: 30px;
     color: #ddd;
     max-width: 95%;
-    /* تحديد عرض البراجراف */
+    
     margin: auto;
 }
 
-/* Hero Button */
+
 .hero-btn {
     z-index: 2;
     background-color: white;
     color: black;
-    /* width: 200px;
-  height: 50px; */
+    
     padding: 12px 30px;
     border-radius: 4px;
     font-size: 15px;
@@ -117,7 +116,7 @@ html, body {
     background-color: #ddd;
 }
 
-/* Dropdown arrow style */
+
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -133,15 +132,15 @@ html, body {
 
 
 
-/* nav section */
-/* Transparent Navbar */
+
+
 .custom-navbar {
     z-index: 2;
     background: transparent;
 
 }
 
-/* Brand style (Secure) */
+
 .brand-secure {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -153,7 +152,7 @@ html, body {
     vertical-align: middle;
 }
 
-/* Nav links style (Home, About Us, Our Services) */
+
 .nav-link {
     font-family: Poppins, sans-serif;
     font-weight: 600;
@@ -164,7 +163,7 @@ html, body {
     color: white !important;
 }
 
-/* Remove Bootstrap default arrow */
+
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -174,7 +173,7 @@ html, body {
 
 }
 
-/* Font Awesome arrow styling */
+
 .dropdown-arrow {
     margin-left: 8px;
     transition: transform .25s ease;
@@ -182,12 +181,12 @@ html, body {
     color: white;
 }
 
-/* Rotate arrow when open */
+
 .nav-item.dropdown.show .dropdown-arrow {
     transform: rotate(180deg);
 }
 
-/* Dropdown menu styling */
+
 .dropdown-menu {
     background-color: white;
     border: none;
@@ -199,7 +198,7 @@ html, body {
 
 
 
-/* Dropdown arrow style */
+
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -213,24 +212,24 @@ html, body {
     transform: rotate(180deg);
 }
 
-/* عرض أكبر للدروب داون */
+
 .mega-dropdown {
     min-width: 600px !important;
-    /* عرض أكبر */
+    
     background-color: #f8f9fa;
-    /* الخلفية */
+    
     border-radius: 8px;
-    /* حواف دائرية */
+    
     border: 1px solid #ddd;
-    /* حدود خفيفة */
+    
 }
 
 .mega-dropdown .row {
     margin: 0;
-    /* إزالة المسافات الجانبية الافتراضية */
+    
 }
 
-/* تعديل البادينج الداخلي */
+
 .dropdown-title {
     font-size: 1rem;
     color: #000;
@@ -241,29 +240,29 @@ html, body {
     text-decoration: underline;
 }
 
-/* تنسيق العناصر */
+
 .dropdown-menu .dropdown-item {
     padding: 0.25rem 0;
     white-space: normal;
-    /* السماح بلف النص */
+    
 }
 
 .mega-dropdown ul li a.dropdown-item {
     font-size: 0.775rem;
-    /* 14px تقريبًا */
+    
     line-height: 1.4;
-    /* ارتفاع السطر */
+    
     padding-left: 0;
-    /* نخليها قريبة من النقطة */
+    
 }
 
 ul {
     list-style-type: disc;
-    /* نقاط */
-    /* list-style-position: inside; جوه العنصر */
+    
+    
 }
 
-/* Contact Us Button */
+
 .contact-btn {
     background-color: white;
     color: black;
@@ -283,10 +282,10 @@ ul {
     background-color: #ddd;
 }
 
-/* موبايل: نصغر الخطوط */
+
 @media (max-width: 768px) {
   .hero-content {
-    margin-top: -70px; /* يرفع النص لفوق */
+    margin-top: -70px; 
   }
   .hero-section
   {
@@ -303,10 +302,10 @@ ul {
   }
 }
 
-/* شاشات صغيرة جدًا (موبايل أصغر من 480px) */
+
 @media (max-width: 375px) {
   .hero-content {
-    margin-top: -100px; /* يرفع النص لفوق */
+    margin-top: -100px; 
   }
   .hero-title {
     font-size: 1.9rem;
@@ -322,23 +321,23 @@ ul {
 
 @media (max-width: 991.98px) {
   .hero-section {
-    overflow: visible; /* علشان الدروب داون يبقى باين */
+    overflow: visible; 
   }
   .mega-dropdown {
-    min-width: 100% !important;  /* العرض يبقى ياخد الشاشة */
-    border-radius: 0;            /* نشيل الزوايا */
+    min-width: 100% !important;  
+    border-radius: 0;            
     border: none;                
-    padding: 10px 15px;          /* مسافة داخلية */
+    padding: 10px 15px;          
   }
 
   .mega-dropdown .row {
-    display: block;              /* بدل flex/grid */
+    display: block;              
   }
 
   .mega-dropdown .col-12,
   .mega-dropdown .col-md-4 {
-    width: 100% !important;      /* كل عمود ياخد عرض الشاشة */
-    margin-bottom: 15px;         /* مسافة بين الأقسام */
+    width: 100% !important;      
+    margin-bottom: 15px;         
   }
 
   .mega-dropdown .dropdown-title {
@@ -353,23 +352,34 @@ ul {
     padding: 5px 0;
   }
 }
-/* end nav section */
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .mega-dropdown {
+    display: block;
+    margin-top: 0;
+  }
+
+  .nav-item.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}
 
 
 
-/* Secure Recycling Section */
-/* الخلفية للصف الأول */
+
+
+
 .sr-header {
     margin-bottom: 3rem;
     background-image: url('../assets/images/Secure Recyclin.png');
     background-size: 70% auto;
-    /* تصغير الصورة لتأخذ نصف العرض */
+    
     background-position: center;
-    /* تمركز الصورة */
+    
     background-repeat: no-repeat;
-    /* منع التكرار */
+    
     padding: 2rem 1rem;
-    /* مساحة حول العنوان */
+    
     color: #fff;
 }
 
@@ -430,23 +440,23 @@ ul {
 
 
 
-/* للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .sr-title {
-    font-size: 1.8rem; /* صغر العنوان */
+    font-size: 1.8rem; 
   }
 
   .sr-desc,
   .sr-feature-item {
-    font-size: 1.3rem; /* تصغير النص */
+    font-size: 1.3rem; 
   }
 
   .sr-feature-title {
-    font-size: 1rem; /* تصغير العناوين داخل الليست */
+    font-size: 1rem; 
   }
 }
 
-/* للشاشات الأصغر (موبايل) */
+
 @media (max-width: 576px) {
   .sr-title {
     font-size: 1.5rem;
@@ -466,12 +476,12 @@ ul {
 
 
 
-/* end  Secure Recycling Isn’t Optional Anymore */
 
 
 
 
-/* what we do and do it right  */
+
+
 
 .comp-prot-header {
     margin-bottom: 3rem;
@@ -499,9 +509,8 @@ ul {
 
 .custom-card {
     position: relative;
-    height: 500px;
-    width: 180px;
-    /* عرض مبدئي صغير لزيادة التباعد */
+    height: 450px;
+    width: 150px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -512,8 +521,16 @@ ul {
     color: #fff;
     background: none;
     padding: 15px;
-    transition: all 0.4s ease;
+    transition: background 0.4s ease, color 0.4s ease, padding 0.4s ease;
+   
 }
+
+
+.custom-card:hover {
+    max-width: 500px;
+    width: 100%;
+}
+
 
 .background-layer {
     position: absolute;
@@ -533,7 +550,7 @@ ul {
     position: absolute;
     top: 0;
     left: 50%;
-    /* البداية من المنتصف */
+    
     width: 0;
     height: 100%;
     z-index: 1;
@@ -553,20 +570,25 @@ ul {
 .hover-text {
     position: absolute;
     bottom: 10px;
-    /* أسفل الصورة */
     left: 0;
     width: 100%;
     text-align: start;
     color: #fff;
     z-index: 2;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transform: translateX(-100%); 
+    transition: transform 0.8s ease, opacity 0.8s ease; 
     background: rgba(0, 0, 0, 0.4);
-    /* طبقة خلفية شفافة لتحسين القراءة */
     padding: 10px 5px;
     border-radius: 0 0 10px 10px;
-    /* نفس حواف الكارد السفلي */
 }
+
+.custom-card:hover .hover-text {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+
 
 .custom-card:hover .hover-text {
     opacity: 1;
@@ -590,7 +612,7 @@ ul {
 
 .vertical-word {
     writing-mode: vertical-rl;
-    /* الكلمة بالطول */
+    
     text-orientation: mixed;
     font-weight: bold;
     font-size: 20px;
@@ -606,23 +628,23 @@ ul {
 
 
 
-/* Hover Effects */
+
 .custom-card:hover {
-    max-width: 500px;
-    /* زيادة العرض عند hover */
+    max-width: 450px;
+    
     width: 100%;
 }
 
 .custom-card:hover .background-layer {
     display: none;
-    /* الخلفية تختفي فورًا */
+   
 }
 
 .custom-card:hover .hover-img {
     left: 0;
     width: 100%;
     transform: none;
-    /* تمتد لتملأ الكارد */
+    
 }
 
 .custom-card:hover .vertical-section,
@@ -638,7 +660,7 @@ ul {
 
 
 .highlight-blue {
-  background: linear-gradient(270deg, #023164, #017291); /* أزرق غامق → أزرق فاتح */
+  background: linear-gradient(270deg, #023164, #017291); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight:750;
@@ -650,7 +672,7 @@ ul {
 
 
 
-/* التابلت */
+
 @media (max-width: 992px) {
   .comp-prot-title {
     font-size: 1.6rem;
@@ -666,7 +688,7 @@ ul {
   }
 
   .custom-card {
-    width: 45%; /* كرتين في الصف */
+    width: 45%; 
   }
 
   .hover-text h4 {
@@ -677,7 +699,7 @@ ul {
   }
 }
 
-/* الموبايل */
+
 @media (max-width: 576px) {
   .comp-prot-title {
     font-size: 1.3rem;
@@ -688,7 +710,7 @@ ul {
   }
 
   .custom-card {
-    width: 100%; /* كرت واحد في الصف */
+    width: 100%; 
     height: 50%;
     margin: 0 auto;
   }
@@ -710,17 +732,17 @@ ul {
 
 
 
-/* end what we do and do it right */
 
 
 
 
 
-/* .from-pickup-to-proof */
+
+
 
 
 .from-pickup-to-proof {
-  /* background-color: #f8f9fa; */
+  
 }
 
 
@@ -748,24 +770,23 @@ ul {
 
 
 
-/* التابلت */
+
 @media (max-width: 992px) {
     .from-pickup-to-proof .section-title {
-        font-size: 1.8rem; /* نصغر العنوان */
+        font-size: 1.8rem; 
     }
 
     .from-pickup-to-proof .section-desc {
-        font-size: 1rem; /* نصغر البراجراف */
+        font-size: 1rem; 
     }
 }
 
-/* الموبايل */
+
 @media (max-width: 576px) {
     .from-pickup-to-proof .section-title {
-        font-size: 1.4rem; /* أصغر للعنوان */
+        font-size: 1.4rem; 
     }
   }
-/*  end .from-pickup-to-proof*/
 
 
 
@@ -775,12 +796,13 @@ ul {
 
 
 
-/* toasts */
+
+
 .toast-bar {
 background: linear-gradient(
     270deg, 
-    rgba(10, 79, 158, 0.932),   /* أزرق شفاف في اليمين */
-    rgba(255, 255, 255, 0.9)  /* أبيض شفاف في الشمال */
+    rgba(10, 79, 158, 0.932),   
+    rgba(255, 255, 255, 0.9)  
   );
    border-radius: 12px;
   padding: 18px 40px;
@@ -801,11 +823,11 @@ background: linear-gradient(
 
 .toast-bar span {
   font-weight: 500;
-  color: #000; /* النص أسود */
+  color: #000; 
 }
 
 
-/* ميديا كويري للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .toast-bar {
     flex-direction: column;
@@ -821,7 +843,7 @@ background: linear-gradient(
   }
 }
 
-/* ميديا كويري للشاشات الصغيرة جداً */
+
 @media (max-width: 480px) {
   .toast-bar {
     font-size: 0.9rem;
@@ -829,7 +851,7 @@ background: linear-gradient(
   }
 }
 
-/* end of toasts */
+
 
 
 .footer
@@ -842,23 +864,23 @@ background: linear-gradient(
     height: 35px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* font-size: 18px; */
-    /* text-decoration: none; */
+    
+    
+    
     transition: background-color 0.3s, color 0.3s;
   }
 
   
 
-  /* ===== Footer: mobile/tablet tweaks ===== */
+  
 @media (max-width: 768px) {
-  /* 1) كلمة Secure في النص */
+  
   .footer .col-md-3:first-of-type h2 {
     text-align: center;
     margin-bottom: 16px;
   }
 
-  /* 2) الثلاث أعمدة (Home / About / Services) جنب بعض في نفس الصف */
+  
   .footer .row { align-items: flex-start; }
   .footer .col-md-2{
     flex: 0 0 33.333%;
@@ -876,7 +898,7 @@ background: linear-gradient(
     display: inline-block;
   }
 
-  /* 3) صف الأيقونات في النص */
+  
   .footer .row > .col-md-3:last-of-type h6{ text-align:center; }
   .footer .row > .col-md-3:last-of-type .d-flex{
     justify-content: center !important;
@@ -885,16 +907,16 @@ background: linear-gradient(
   .footer .social-icon{ width:30px !important; height:30px !important; }
   .footer .social-icon img{ width:16px; height:16px; }
 
-  /* 4) الصف الأخير (Privacy/Terms/...) يظهر كله في نفس الصف */
+  
   .footer hr + .d-flex.justify-content-center.container{
-    padding-left: 8px; padding-right: 8px;   /* نكسب مساحة أفقية */
-    gap: 8px !important;                     /* نقلل المسافات */
-    flex-wrap: nowrap !important;            /* صف واحد */
+    padding-left: 8px; padding-right: 8px;   
+    gap: 8px !important;                     
+    flex-wrap: nowrap !important;            
   }
   .footer hr + .d-flex.justify-content-center.container p{
-    white-space: nowrap;                     /* ما يكسرش سطور */
-    font-size: clamp(10px, 2.6vw, 12px);     /* يصغر بما يكفي للموبايل */
+    white-space: nowrap;                     
+    font-size: clamp(10px, 2.6vw, 12px);     
     margin-bottom: 0;
-    letter-spacing: -0.1px;                  /* تحجيم بسيط */
+    letter-spacing: -0.1px;                  
   }
 }

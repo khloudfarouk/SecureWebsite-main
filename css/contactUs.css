@@ -1,5 +1,5 @@
 html, body {
-  overflow-x: hidden; /* يمنع السكرول الأفقي */
+  overflow-x: hidden; 
 }
 
 .nav-link {
@@ -9,7 +9,7 @@ html, body {
     color: black !important;
 }
 
-/* اخفاء سهم البوتستراب */
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -27,7 +27,7 @@ html, body {
     color: black !important;
 }
 
-/* اخفاء سهم البوتستراب */
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -43,7 +43,7 @@ html, body {
 }
 
 
-/* Dropdown arrow style */
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -57,19 +57,19 @@ html, body {
   transform: rotate(180deg);
 }
 
-/* عرض أكبر للدروب داون */
+
 .mega-dropdown {
- min-width: 600px !important; /* عرض أكبر */
-  background-color: #f8f9fa;   /* الخلفية */
-  border-radius: 8px;          /* حواف دائرية */
-  border: 1px solid #ddd;      /* حدود خفيفة */
+ min-width: 600px !important; 
+  background-color: #f8f9fa;   
+  border-radius: 8px;          
+  border: 1px solid #ddd;      
 }
 
 .mega-dropdown .row {
-  margin: 0; /* إزالة المسافات الجانبية الافتراضية */
+  margin: 0; 
 }
 
-/* تعديل البادينج الداخلي */
+
 .dropdown-title {
   font-size: 1rem;
   color: #000;
@@ -80,43 +80,43 @@ html, body {
   text-decoration: underline;
 }
 
-/* تنسيق العناصر */
+
 .dropdown-menu .dropdown-item {
   padding: 0.25rem 0;
-  white-space: normal; /* السماح بلف النص */
+  white-space: normal; 
 }
 .mega-dropdown ul li a.dropdown-item {
-  font-size: 0.775rem; /* 14px تقريبًا */
-  line-height: 1.4;    /* ارتفاع السطر */
-  padding-left: 0;     /* نخليها قريبة من النقطة */
+  font-size: 0.775rem; 
+  line-height: 1.4;    
+  padding-left: 0;     
 }
 
 ul {
-  list-style-type: disc; /* نقاط */
-  /* list-style-position: inside; جوه العنصر */
+  list-style-type: disc; 
+  
 }
 
 
 
 @media (max-width: 991.98px) {
   .hero-section {
-    overflow: visible; /* علشان الدروب داون يبقى باين */
+    overflow: visible; 
   }
   .mega-dropdown {
-    min-width: 100% !important;  /* العرض يبقى ياخد الشاشة */
-    border-radius: 0;            /* نشيل الزوايا */
+    min-width: 100% !important;  
+    border-radius: 0;            
     border: none;                
-    padding: 10px 15px;          /* مسافة داخلية */
+    padding: 10px 15px;          
   }
 
   .mega-dropdown .row {
-    display: block;              /* بدل flex/grid */
+    display: block;              
   }
 
   .mega-dropdown .col-12,
   .mega-dropdown .col-md-4 {
-    width: 100% !important;      /* كل عمود ياخد عرض الشاشة */
-    margin-bottom: 15px;         /* مسافة بين الأقسام */
+    width: 100% !important;      
+    margin-bottom: 15px;         
   }
 
   .mega-dropdown .dropdown-title {
@@ -152,14 +152,14 @@ ul {
 
 
 
-/* contact us form */
+
 .contact-wrap {
-  background: #0b1a2b; /* لون الخلفية الأساسي */
+  background: #0b1a2b; 
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
 }
 
-/* تأثير زجاجي */
+
 .glass-box {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -168,7 +168,7 @@ ul {
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* الحقول بخلفية شفافة */
+
 .form-transparent {
   background-color: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -184,7 +184,7 @@ ul {
   border-color: #fff;
 }
 
-/* تصغير النص والصورة على الشاشات الصغيرة */
+
 @media (max-width: 576px) {
   .contact-wrap h3 {
     font-size: 1.25rem;
@@ -198,20 +198,29 @@ ul {
   }
 }
 
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .mega-dropdown {
+    display: block;
+    margin-top: 0;
+  }
 
-/* end contact us  */
+  .nav-item.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}
 
 
 
 
 
 
-/* toasts */
+
+
 .toast-bar {
 background: linear-gradient(
     270deg, 
-    rgba(10, 79, 158, 0.932),   /* أزرق شفاف في اليمين */
-    rgba(255, 255, 255, 0.9)  /* أبيض شفاف في الشمال */
+    rgba(10, 79, 158, 0.932),   
+    rgba(255, 255, 255, 0.9)  
   );
    border-radius: 12px;
   padding: 18px 40px;
@@ -232,11 +241,11 @@ background: linear-gradient(
 
 .toast-bar span {
   font-weight: 500;
-  color: #000; /* النص أسود */
+  color: #000; 
 }
 
 
-/* ميديا كويري للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .toast-bar {
     flex-direction: column;
@@ -252,7 +261,7 @@ background: linear-gradient(
   }
 }
 
-/* ميديا كويري للشاشات الصغيرة جداً */
+
 @media (max-width: 480px) {
   .toast-bar {
     font-size: 0.9rem;
@@ -260,7 +269,7 @@ background: linear-gradient(
   }
 }
 
-/* end of toasts */
+
 
 
 .footer
@@ -273,22 +282,22 @@ background: linear-gradient(
     height: 35px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* font-size: 18px; */
-    /* text-decoration: none; */
+    
+    
+    
     transition: background-color 0.3s, color 0.3s;
   }
 
 
-  /* ===== Footer: mobile/tablet tweaks ===== */
+  
 @media (max-width: 768px) {
-  /* 1) كلمة Secure في النص */
+  
   .footer .col-md-3:first-of-type h2 {
     text-align: center;
     margin-bottom: 16px;
   }
 
-  /* 2) الثلاث أعمدة (Home / About / Services) جنب بعض في نفس الصف */
+  
   .footer .row { align-items: flex-start; }
   .footer .col-md-2{
     flex: 0 0 33.333%;
@@ -306,7 +315,7 @@ background: linear-gradient(
     display: inline-block;
   }
 
-  /* 3) صف الأيقونات في النص */
+  
   .footer .row > .col-md-3:last-of-type h6{ text-align:center; }
   .footer .row > .col-md-3:last-of-type .d-flex{
     justify-content: center !important;
@@ -315,16 +324,16 @@ background: linear-gradient(
   .footer .social-icon{ width:30px !important; height:30px !important; }
   .footer .social-icon img{ width:16px; height:16px; }
 
-  /* 4) الصف الأخير (Privacy/Terms/...) يظهر كله في نفس الصف */
+  
   .footer hr + .d-flex.justify-content-center.container{
-    padding-left: 8px; padding-right: 8px;   /* نكسب مساحة أفقية */
-    gap: 8px !important;                     /* نقلل المسافات */
-    flex-wrap: nowrap !important;            /* صف واحد */
+    padding-left: 8px; padding-right: 8px;   
+    gap: 8px !important;                     
+    flex-wrap: nowrap !important;            
   }
   .footer hr + .d-flex.justify-content-center.container p{
-    white-space: nowrap;                     /* ما يكسرش سطور */
-    font-size: clamp(10px, 2.6vw, 12px);     /* يصغر بما يكفي للموبايل */
+    white-space: nowrap;                     
+    font-size: clamp(10px, 2.6vw, 12px);     
     margin-bottom: 0;
-    letter-spacing: -0.1px;                  /* تحجيم بسيط */
+    letter-spacing: -0.1px;                  
   }
 }

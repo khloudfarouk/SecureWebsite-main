@@ -1,6 +1,6 @@
-/* Reset أساسي */
+
 html, body {
-  overflow-x: hidden; /* يمنع السكرول الأفقي */
+  overflow-x: hidden; 
 }
 
 * {
@@ -9,7 +9,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* إعدادات الخطوط والألوان الأساسية */
+
 :root {
   --primary: #0d6efd;
   --dark: #222;
@@ -26,13 +26,12 @@ body {
 
 
 
-/* Hero Section */
+
 .hero-section {
   position: relative;
   height: 110vh;
   overflow: hidden;
-  /* padding: 5px; */
-  /* background-color: #222; */
+  
 }
 
 .hero-bg {
@@ -47,7 +46,7 @@ body {
 }
 
 
-/* Animated gradient background */
+
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -62,7 +61,7 @@ body {
   }
 }
 
-/* Hero Content */
+
 .hero-content {
   flex: 1;
   display: flex;
@@ -73,15 +72,15 @@ body {
   text-align: center;
   color: white;
   padding-top: 250px;
-  /* علشان الناف بار */
+  
 }
 
-/* العبارة الأولى */
+
 .hero-title {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* Medium */
+  
   font-size: 60px;
   line-height: 102%;
   letter-spacing: 0px;
@@ -89,12 +88,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* العبارة الثانية */
+
 .hero-subtitle {
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-style: normal;
-  /* Regular */
+  
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0px;
@@ -102,12 +101,11 @@ body {
   margin-bottom: 30px;
 }
 
-/* Hero Button */
+
 .hero-btn {
   background-color: white;
   color: black;
-  /* width: 200px;
-  height: 50px; */
+  
   padding: 12px 30px;
   border-radius: 4px;
   font-size: 15px;
@@ -122,7 +120,7 @@ body {
 }
 
 
-/* Dropdown arrow style */
+
 .dropdown-toggle::after {
   display: none !important;
 
@@ -137,20 +135,20 @@ body {
   transform: rotate(180deg);
 }
 
-/* عرض أكبر للدروب داون */
+
 .mega-dropdown {
- min-width: 600px !important; /* عرض أكبر */
-  background-color: #f8f9fa;   /* الخلفية */
-  border-radius: 8px;          /* حواف دائرية */
+ min-width: 600px !important; 
+  background-color: #f8f9fa;   
+  border-radius: 8px;          
   border: 1px solid #ddd; 
-       /* حدود خفيفة */
+       
 }
 
 .mega-dropdown .row {
-  margin: 0; /* إزالة المسافات الجانبية الافتراضية */
+  margin: 0; 
 }
 
-/* تعديل البادينج الداخلي */
+
 .dropdown-title {
   font-size: 1rem;
   color: #000;
@@ -161,33 +159,33 @@ body {
   text-decoration: underline;
 }
 
-/* تنسيق العناصر */
+
 .dropdown-menu .dropdown-item {
   padding: 0.25rem 0;
-  white-space: normal; /* السماح بلف النص */
+  white-space: normal; 
 }
 .mega-dropdown ul li a.dropdown-item {
-  font-size: 0.775rem; /* 14px تقريبًا */
-  line-height: 1.4;    /* ارتفاع السطر */
-  padding-left: 0;     /* نخليها قريبة من النقطة */
+  font-size: 0.775rem; 
+  line-height: 1.4;    
+  padding-left: 0;     
 }
 
 ul {
-  list-style-type: disc; /* نقاط */
-  /* list-style-position: inside; جوه العنصر */
+  list-style-type: disc; 
+  
 }
 
 
 
 
-/* nav section */
-/* Transparent Navbar */
+
+
 .custom-navbar {
   background: transparent;
 
 }
 
-/* Brand style (Secure) */
+
 .brand-secure {
   font-family: Poppins, sans-serif;
   font-weight: 400;
@@ -199,7 +197,7 @@ ul {
   vertical-align: middle;
 }
 
-/* Nav links style (Home, About Us, Our Services) */
+
 .nav-link {
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -210,7 +208,7 @@ ul {
   color: white !important;
 }
 
-/* Remove Bootstrap default arrow */
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -220,7 +218,7 @@ ul {
 
 }
 
-/* Font Awesome arrow styling */
+
 .dropdown-arrow {
   margin-left: 8px;
   transition: transform .25s ease;
@@ -228,12 +226,12 @@ ul {
   color: white;
 }
 
-/* Rotate arrow when open */
+
 .nav-item.dropdown.show .dropdown-arrow {
   transform: rotate(180deg);
 }
 
-/* Dropdown menu styling */
+
 .dropdown-menu {
   background-color: white;
   border: none;
@@ -243,7 +241,7 @@ ul {
   color: black !important;
 }
 
-/* Contact Us Button */
+
 .contact-btn {
   background-color: white;
   color: black;
@@ -266,10 +264,10 @@ ul {
 
 
 
-/* موبايل: نصغر الخطوط */
+
 @media (max-width: 768px) {
   .hero-content {
-    margin-top: -70px; /* يرفع النص لفوق */
+    margin-top: -70px; 
   }
   .hero-section
   {
@@ -292,10 +290,10 @@ ul {
 {
   border: none!important;
 }
-/* شاشات صغيرة جدًا (موبايل أصغر من 480px) */
+
 @media (max-width: 375px) {
   .hero-content {
-    margin-top: -100px; /* يرفع النص لفوق */
+    margin-top: -100px; 
   }
   .hero-title {
     font-size: 1.9rem;
@@ -312,23 +310,23 @@ ul {
 
 @media (max-width: 991.98px) {
   .hero-section {
-    overflow: visible; /* علشان الدروب داون يبقى باين */
+    overflow: visible; 
   }
   .mega-dropdown {
-    min-width: 100% !important;  /* العرض يبقى ياخد الشاشة */
-    border-radius: 0;            /* نشيل الزوايا */
+    min-width: 100% !important;  
+    border-radius: 0;            
     border: none;                
-    padding: 10px 15px;          /* مسافة داخلية */
+    padding: 10px 15px;          
   }
 
   .mega-dropdown .row {
-    display: block;              /* بدل flex/grid */
+    display: block;              
   }
 
   .mega-dropdown .col-12,
   .mega-dropdown .col-md-4 {
-    width: 100% !important;      /* كل عمود ياخد عرض الشاشة */
-    margin-bottom: 15px;         /* مسافة بين الأقسام */
+    width: 100% !important;      
+    margin-bottom: 15px;         
   }
 
   .mega-dropdown .dropdown-title {
@@ -343,11 +341,26 @@ ul {
     padding: 5px 0;
   }
 }
-/* end nav section */
+
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .mega-dropdown {
+    display: block;
+    margin-top: 0;
+  }
+
+  .nav-item.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}
 
 
 
-/* intro section first row */
+
+
+
+
+
 .intro-section {
   padding: 80px 20px;
   background-color: #f8f9fa;
@@ -359,7 +372,7 @@ ul {
   color: #1A1938;
   font-weight: 500;
   font-style: normal;
-  /* Medium */
+  
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0;
@@ -380,15 +393,15 @@ ul {
   color: #0B1A2B;
   font-weight: 400;
   font-style: normal;
-  /* Regular */
+  
   font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0;
   text-align: center;
   max-width: 100%;
-  /* علشان النص يفضل مقروء */
+  
   margin: 0 auto;
-  /* توسيط في النص */
+  
 }
 
 
@@ -400,9 +413,9 @@ ul {
   }
 
   .intro-row .title-logo {
-    width: 40px;   /* تكبير اللوجو */
-    height: auto;  /* يحافظ على الأبعاد */
-    margin: 0 5px; /* مسافة بسيطة يمين ويسار */
+    width: 40px;   
+    height: auto;  
+    margin: 0 5px; 
   }
   .intro-desc
   {
@@ -413,17 +426,17 @@ ul {
 
 
 
-/* end intro section first row */
 
 
-/* second row our-approach */
+
+
 .our-approach-container {
   position: relative;
   width: 100%;
-  height: 85%;
-  /* margin: 0 auto; */
-  /* padding: 40px 0; */
-  /* margin-bottom: 1px; */
+  height: 60%;
+  
+  
+  
   min-height: 600px;
 }
 
@@ -433,13 +446,13 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 90%;
+  height: 30%;
   background: #27313F;
   border-radius: 3px;
   z-index: 1;
 }
 
-/* الصف الأساسي */
+
 .step-row {
   position: relative;
   display: flex;
@@ -449,25 +462,25 @@ ul {
   overflow: visible !important;
 }
 
-/* الكارد على اليسار */
+
 .left-row {
   justify-content: flex-start;
 }
 
 .left-row .card-container {
-  margin-right: calc(50% + 80px); /* إبعاد الكارد عن الخط بمسافة */
+  margin-right: calc(50% + 80px); 
 }
 
-/* الكارد على اليمين */
+
 .right-row {
   justify-content: flex-end;
 }
 
 .right-row .card-container {
-  margin-left: calc(50% + 80px); /* إبعاد الكارد عن الخط بمسافة */
+  margin-left: calc(50% + 80px); 
 }
 
-/* الرقم */
+
 .number {
   position: absolute;
   left: 50%;
@@ -488,51 +501,49 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-/* الكارد */
+[data-aos="fade-in"].number {
+  transform: translateX(-50%) !important; 
+}
+
 .card-container {
-  position: relative;
-  width: 490px;
-  height: 210px;
-  border-radius: 10px;
-  padding: 2px;
-  background: linear-gradient(to bottom, rgb(11, 26, 43), rgb(93, 213, 243));
+  
 }
 
 .card-container .card {
-  background: white !important;
-  border-radius: 8px;
-  border: none;
-  padding: 10px;
-  color: #222;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(180deg, #0b1a2b, #5dd5f3);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-.card[data-aos] {
-  transition-property: transform, opacity !important; /* نمنع تغيير الخلفية */
+  height: 210px;
 }
 
-/* الأيقونة */
+
+
 .icon img {
   display: block;
   margin: 0 auto 10px;
   width: 80px;
-  /* height: 70px; */
+  
   object-fit: contain;
 }
 
-/* العنوان */
+
 .card h4 {
-  font-weight: 800; /* بولد */
-  font-size: 1.2rem; /* تصغير نسبي */
+  font-weight: 800; 
+  font-size: 1.2rem; 
   margin-bottom: 8px;
   color: #0B1A2B;
   text-align: center;
 }
 
-/* الوصف */
+
 .card p {
   font-weight: 500;
   color: #0B1A2B;
@@ -544,53 +555,55 @@ ul {
 
 
 
-/* الشاشات الأصغر من اللابتوب */
+
 @media (max-width: 991px) {
-  /* تصغير عنوان السيكشن */
+  
+  
   .intro-title {
-    font-size: 1.2rem; /* حجم أصغر */
+    font-size: 1.2rem; 
     text-align: center;
   }
 
-  /* تصغير الأيقونة اللي في النص */
+  
   .intro-title img.title-logo {
     width: 30px;
     height: auto;
     margin: 0 5px;
   }
 
-  /* الكروت تبقى تحت بعض */
+  
   .step-row {
     flex-direction: column !important;
     align-items: center;
     margin-bottom: 20px;
   }
 
-  /* إزالة المسافات الجانبية وتوسيط الكارد */
+  
   .card-container {
     margin: 0 !important;
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: auto; 
   }
+  .card-container
 
-  /* إخفاء الخط العمودي */
+  
   .vertical-line {
     display: none;
   }
 
-  /* إخفاء الأرقام لو مش لازمة في الموبايل */
+  
   .number {
     display: none;
   }
 }
 
 
-/* end second row our-approach */
 
 
 
-/* what we do */
+
+
 .what-we-do {
   font-family: poppins, sans-serif;
 background-image: url('../assets/images/zero_one.png');
@@ -603,7 +616,7 @@ background-image: url('../assets/images/zero_one.png');
   font-weight: 100;
   font-size: 1.9rem;
   margin-bottom: 10px;
-  color: #fff; /* أبيض */
+  color: #fff; 
 }
 
 .first-row h5.line2 {
@@ -611,20 +624,20 @@ background-image: url('../assets/images/zero_one.png');
   font-size: 2.0rem;
   font-weight: 900;
   margin-bottom: 20px;
-  color: #fff; /* أبيض */
+  color: #fff; 
 }
 
 .first-row .desc {
-  /* max-width: 700px; */
+  
   margin: 0 auto;
   font-size: 1.7rem;
   line-height: 1.6;
   font-weight: 400;
-  color: #fff; /* أبيض */
+  color: #fff; 
   
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .first-row h2.line1 {
     font-size: 1.8rem;
@@ -638,19 +651,19 @@ background-image: url('../assets/images/zero_one.png');
 }
 
 
-/* secon row */
-/* تحريك الفيديو ناحية الشمال */
+
+
 .video-column {
-  padding-left: 0; /* يشيل المسافة الفاضية */
+  padding-left: 0; 
 }
 
 .video-column video {
-  transform: translateX(-20px); /* تحريك للشمال */
+  transform: translateX(-20px); 
   max-width: 100%;
   height: auto;
 }
 
-/* التأكد من أن النص في العمود الأخير على اليمين */
+
 .text-end {
   text-align: right;
 }
@@ -687,7 +700,7 @@ background-image: url('../assets/images/zero_one.png');
 
 .indicator-img.left {
   margin-right: 10px;
-    transform: translateX(-20px); /* تحريك للشمال */
+    transform: translateX(-20px); 
 
 }
 
@@ -703,7 +716,7 @@ background-image: url('../assets/images/zero_one.png');
 
 
 @media (max-width: 768px) {
-  /* نخلي الأعمدة تاخد العرض كله */
+  
   .features-section .col-md-4 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -711,24 +724,24 @@ background-image: url('../assets/images/zero_one.png');
     margin-bottom: 20px;
   }
 
-  /* نرتب الـ feature-item في النص */
+  
   .features-section .feature-item {
     justify-content: center;
     text-align: center;
   }
 
-  /* نخلي النصوص في النص */
+  
   .features-section .feature-title,
   .features-section .feature-desc {
     text-align: center;
   }
 
-  /* نشيل الصور indicators */
+  
   .features-section .indicator-img {
     display: none !important;
   }
 
-  /* الفيديو برضه يبقى أصغر ومتمركز */
+  
   .features-section .lock-video {
     max-width: 250px;
     margin: 20px auto;
@@ -736,10 +749,10 @@ background-image: url('../assets/images/zero_one.png');
   }
 }
 
-/* end what we do section */
 
 
-/* coprehensive protection section */
+
+
 .comp-prot-section {
   font-family: 'Poppins', sans-serif;
   color: #222;
@@ -794,7 +807,7 @@ color:#1A1938;
  
 }
 
-/* تابلت */
+
 @media (max-width: 992px) {
   .comp-prot-title {
     font-size: 1.75rem;
@@ -813,7 +826,7 @@ color:#1A1938;
   }
 }
 
-/* موبايل */
+
 @media (max-width: 576px) {
   .comp-prot-title {
     font-size: 1.5rem;
@@ -838,14 +851,14 @@ color:#1A1938;
   }
 }
 
-/* end of coprehensive protection  section*/
 
-/* toasts */
+
+
 .toast-bar {
 background: linear-gradient(
     270deg, 
-    rgba(10, 79, 158, 0.932),   /* أزرق شفاف في اليمين */
-    rgba(255, 255, 255, 0.9)  /* أبيض شفاف في الشمال */
+    rgba(10, 79, 158, 0.932),   
+    rgba(255, 255, 255, 0.9)  
   );
    border-radius: 12px;
   padding: 18px 40px;
@@ -866,11 +879,11 @@ background: linear-gradient(
 
 .toast-bar span {
   font-weight: 500;
-  color: #000; /* النص أسود */
+  color: #000; 
 }
 
 
-/* ميديا كويري للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .toast-bar {
     flex-direction: column;
@@ -886,7 +899,7 @@ background: linear-gradient(
   }
 }
 
-/* ميديا كويري للشاشات الصغيرة جداً */
+
 @media (max-width: 480px) {
   .toast-bar {
     font-size: 0.9rem;
@@ -894,7 +907,7 @@ background: linear-gradient(
   }
 }
 
-/* end of toasts */
+
 
 
 .footer
@@ -907,9 +920,9 @@ background: linear-gradient(
     height: 35px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* font-size: 18px; */
-    /* text-decoration: none; */
+    
+    
+    
     transition: background-color 0.3s, color 0.3s;
   }
 
@@ -917,15 +930,15 @@ background: linear-gradient(
   
 
   
-  /* ===== Footer: mobile/tablet tweaks ===== */
+  
 @media (max-width: 768px) {
-  /* 1) كلمة Secure في النص */
+  
   .footer .col-md-3:first-of-type h2 {
     text-align: center;
     margin-bottom: 16px;
   }
 
-  /* 2) الثلاث أعمدة (Home / About / Services) جنب بعض في نفس الصف */
+  
   .footer .row { align-items: flex-start; }
   .footer .col-md-2{
     flex: 0 0 33.333%;
@@ -943,7 +956,7 @@ background: linear-gradient(
     display: inline-block;
   }
 
-  /* 3) صف الأيقونات في النص */
+  
   .footer .row > .col-md-3:last-of-type h6{ text-align:center; }
   .footer .row > .col-md-3:last-of-type .d-flex{
     justify-content: center !important;
@@ -952,20 +965,16 @@ background: linear-gradient(
   .footer .social-icon{ width:30px !important; height:30px !important; }
   .footer .social-icon img{ width:16px; height:16px; }
 
-  /* 4) الصف الأخير (Privacy/Terms/...) يظهر كله في نفس الصف */
+  
   .footer hr + .d-flex.justify-content-center.container{
-    padding-left: 8px; padding-right: 8px;   /* نكسب مساحة أفقية */
-    gap: 8px !important;                     /* نقلل المسافات */
-    flex-wrap: nowrap !important;            /* صف واحد */
+    padding-left: 8px; padding-right: 8px;   
+    gap: 8px !important;                     
+    flex-wrap: nowrap !important;            
   }
   .footer hr + .d-flex.justify-content-center.container p{
-    white-space: nowrap;                     /* ما يكسرش سطور */
-    font-size: clamp(10px, 2.6vw, 12px);     /* يصغر بما يكفي للموبايل */
+    white-space: nowrap;                     
+    font-size: clamp(10px, 2.6vw, 12px);     
     margin-bottom: 0;
-    letter-spacing: -0.1px;                  /* تحجيم بسيط */
+    letter-spacing: -0.1px;                  
   }
 }
-
-
-
-
