@@ -29,8 +29,10 @@ body {
 
 .hero-section {
   position: relative;
-  height: 110vh;
+  min-height: 100vh; 
+  height: auto!important;      
   overflow: hidden;
+  transition: min-height 0.4s ease;
   
 }
 
@@ -353,6 +355,7 @@ ul {
     transform: rotate(180deg);
   }
 }
+
 
 
 

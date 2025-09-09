@@ -4,11 +4,13 @@ html, body {
 
 
 .hero-section {
-    position: relative;
-    height: 110vh;
-    overflow: hidden;
+  position: relative;
+  min-height: 100vh; 
+  height: auto!important;      /* يخليه يتمدد حسب المحتوى */
+  overflow: hidden;
+  transition: min-height 0.4s ease;
+  
 }
-
 .hero-bg {
     position: absolute;
     top: 0;

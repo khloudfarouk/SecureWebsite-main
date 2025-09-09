@@ -5,9 +5,10 @@ html, body {
 
 .hero-section {
   position: relative;
-  height: 110vh;
+  min-height: 100vh; 
+  height: auto!important;      /* يخليه يتمدد حسب المحتوى */
   overflow: hidden;
-  
+  transition: min-height 0.4s ease;
   
 }
 
