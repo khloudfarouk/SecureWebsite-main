@@ -29,7 +29,7 @@ body {
 
 .hero-section {
   position: relative;
-  min-height: 100vh; 
+  min-height: 90vh; 
   height: auto!important;      
   overflow: hidden;
   transition: min-height 0.4s ease;
@@ -356,6 +356,19 @@ ul {
   }
 }
 
+
+/* شاشات التابلت (عمودي وأفقي) */
+/* تابلت Portrait & Landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-section {
+    min-height: 50vh;   /* قلليها للقيمة اللي تناسبك */
+    height: auto !important; /* يفضل تسيبيه auto */
+  }
+
+  .hero-content {
+    padding-top: 150px;  /* نزلي الـ padding لو محتاجة */
+  }
+}
 
 
 

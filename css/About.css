@@ -5,7 +5,7 @@ html, body {
 
 .hero-section {
   position: relative;
-  min-height: 100vh; 
+  min-height: 80vh; 
   height: auto!important;      
   overflow: hidden;
   transition: min-height 0.4s ease;
@@ -346,6 +346,20 @@ ul {
 
   .nav-item.dropdown:hover .dropdown-arrow {
     transform: rotate(180deg);
+  }
+}
+
+
+
+/* تابلت Portrait & Landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-section {
+    min-height: 50vh;   
+    height: auto !important; 
+  }
+
+  .hero-content {
+    padding-top: 150px;  
   }
 }
 
